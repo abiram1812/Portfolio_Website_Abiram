@@ -3,7 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--SEO Meta Tags-->
+    <meta name="description" content="Full stack developer specialising in React, Node.js, and responsive web design. Check out my portfolio to see my projects and skills.">
+    <meta name="keywords" content="Soumik, Portfolio, Web Developer, React, Node.js, HTML, CSS, JavaScript, Freelance Developer">
+    <meta name="author" content="Abiram">
     <title>My Portfolio | Abiram</title>
+
+    <!--Open Graph Meta Tags for Social Media Sharing-->
+    <meta property="og:title" content="My Portfolio | Abiram">
+    <meta property="og:description" content="Full stack developer specialising in React, Node.js, and responsive web design. Check out my portfolio to see my projects and skills.">
+    <meta property="og:image" content="images/profile.jpg">
+    <meta property="og:url" content="[Your Portfolio URL]">
+    <meta property="og:type" content="website">
+
+    <!--Twitter Card Meta Tags-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="My Portfolio | Abiram">
+    <meta name="twitter:description" content="Full stack developer specialising in React, Node.js, and responsive web design. Check out my portfolio to see my projects and skills.">
+    <meta name="twitter:image" content="images/profile.jpg">
+    
+    <!--Favicon-->
+    <link rel="icon" type="image/jpg" href="images/favicon.jpg" alt="Favicon">
 </head>
 <body>
     <!--NAVIGATION-->
@@ -24,8 +45,12 @@
     <!--ABOUT SECTION-->
     <section id="about">
         <h2>About Me</h2>
-        <img src="profile.jpg" alt="Abiram's Profile Picture" width="200" height="200">
-        <p>I am a web developer with a strong background in front-end and back-end technologies. I love creating responsive and user-friendly websites. I'm good in:</p>
+        <figure>
+            <img src="images/profile.jpg" alt="Abiram's Profile Picture" width="200" height="200">
+            <figcaption>I love creating responsive and user-friendly websites.</figcaption>
+        </figure>
+        
+        <p>I am a web developer with a strong background in front-end and back-end technologies. I'm good in:</p>
         <ol>
             <li>Web Development</li>
             <li>UI/UX Design</li>
@@ -51,7 +76,11 @@
         <div class="project-card">
             <h3>Project 1</h3>
             <p>A simple web application built with HTML, CSS, and JavaScript.</p>
-            <a href="#" class="btn">View Project</a>
+            <a href="project1.html" class="btn">View Project</a>
+
+            <!--Embed YouTube Video (iframe)-->
+            <iframe width="300" height="169" src="https://www.youtube.com/embed/tqjJrXd27m4" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+
             <h3>Project 2</h3>
             <p>A responsive portfolio website built using React.</p>
             <a href="#" class="btn">View Project</a>

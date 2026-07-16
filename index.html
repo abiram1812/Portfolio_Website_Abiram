@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--SEO Meta Tags-->
+    <meta name="title" content="My Portfolio | Abiram">
     <meta name="description" content="Full stack developer specialising in React, Node.js, and responsive web design. Check out my portfolio to see my projects and skills.">
     <meta name="keywords" content="Soumik, Portfolio, Web Developer, React, Node.js, HTML, CSS, JavaScript, Freelance Developer">
     <meta name="author" content="Abiram">
@@ -26,104 +27,179 @@
     <!--Favicon-->
     <link rel="icon" type="image/jpg" href="images/favicon.jpg" alt="Favicon">
 </head>
+
 <body>
     <!--NAVIGATION-->
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <nav class="navbar">
+        <div class="logo">Abiram</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- FOR DARK MODE -->
+        <button class="theme-toggle" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">🌛</button>
+ 
+        <!-- Mobile Menu -->
+        <button class="menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">☰</button>
     </nav>
 
     <!--HERO SECTION-->
-    <header>
-        <h1>Hi, I'm Abiram</h1>
-        <p>I'm a passionate web developer from Bengaluru.</p>
-        <a href="#contact" class="btn">Hire Me</a>
-    </header>
+    <section class="hero-section" id="hero">
+        <header class="site-header">
+             <h1 >Hi, <span class="highlight">I'm Abiram</span></h1>
+            <p>I'm a passionate web developer from Bengaluru.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn">Hire Me</a>
+            </div>
+        </header>
+    </section>
 
     <!--ABOUT SECTION-->
-    <section id="about">
+    <section id="about" class="about-section">
         <h2>About Me</h2>
-        <figure>
-            <img src="images/profile.jpg" alt="Abiram's Profile Picture" width="200" height="200">
-            <figcaption>I love creating responsive and user-friendly websites.</figcaption>
-        </figure>
-        
-        <p>I am a web developer with a strong background in front-end and back-end technologies. I'm good in:</p>
-        <ol>
-            <li>Web Development</li>
-            <li>UI/UX Design</li>
-            <li>Project Management</li>
-        </ol>
+        <div class="about-content">
+            <figure class="profile-figure">
+                <img src="images/profile.jpg" alt="Abiram's Profile Picture" width="200" height="200">
+                <figcaption>I love creating responsive and user-friendly websites.</figcaption>
+            </figure>
+        </div>
+        <div class="about-text">
+            <p>I am a web developer with a strong background in front-end and back-end technologies. I'm good in:</p>
+            <ol>
+                <li>Web Development</li>
+                <li>UI/UX Design</li>
+                <li>Project Management</li>
+            </ol>
+        </div>
     </section>
 
     <!--SKILLS SECTION-->
-    <section id="skills">
+    <section id="skills" class="skill-section">
         <h2>Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-        </ul>
+        <div class="skills-grid">
+        <table>
+        <thead>
+            <tr>
+                <th>Technology</th>
+                <th>Proficiency</th>
+                <th>Years of Experience</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>Advanced</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Advanced</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Intermediate</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Advanced</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Node.js</td>
+                <td>Beginner</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>React</td>
+                <td>Intermediate</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+        </table>
+        </div>
     </section>
 
     <!--PROJECTS SECTION-->
-    <section id="projects">
+    <section id="projects" class="projects-section">
         <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Project 1</h3>
-            <p>A simple web application built with HTML, CSS, and JavaScript.</p>
-            <a href="project1.html" class="btn">View Project</a>
+        <div class="project-grid">
+            <article class="project-card" data-category="web">
+                <h3>Project 1</h3>
+                <p>A simple web application built with HTML, CSS, and JavaScript.</p>
+                <a href="project1.html" class="btn">View Project</a>
+            </article>
 
             <!--Embed YouTube Video (iframe)-->
-            <iframe width="300" height="169" src="https://www.youtube.com/embed/tqjJrXd27m4" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            <div class="video-container">
+                <iframe width="300" height="169" src="https://www.youtube.com/embed/tqjJrXd27m4" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
 
-            <h3>Project 2</h3>
-            <p>A responsive portfolio website built using React.</p>
-            <a href="#" class="btn">View Project</a>
-            <h3>Project 3</h3>
-            <p>A RESTful API built with Node.js and Express.</p>
-            <a href="#" class="btn">View Project</a>
+            <article class="project-card" data-category="web">
+                <h3>Project 2</h3>
+                <p>A responsive portfolio website built using React.</p>
+                <a href="project2.html" class="btn">View Project</a>
+            </article>
+
+            <article class="project-card" data-category="web">
+                <h3>Project 3</h3>
+                <p>A RESTful API built with Node.js and Express.</p>
+                <a href="project3.html" class="btn">View Project</a>
+            </article>
         </div>
     </section>
 
     <!--CONTACT SECTION-->
-    <section id="contact">
+    <section id="contact" class="contact-section">
         <h2>Contact Me</h2>
         <p>Have a question or want to work together? Feel free to reach out!</p>
 
         <form action="#" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
 
-            <label for="subject">Subject:</label>
-            <select id="subject" name="subject" required>
-                <option value="">Select a subject</option>
-                <option value="web development">I want to hire you for web development</option>
-                <option value="ui-ux design">I want to collaborate on UI/UX design</option>
-                <option value="other">Other</option>
-            </select>
+            <div class="form-group">
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="web development">I want to hire you for web development</option>
+                    <option value="ui-ux design">I want to collaborate on UI/UX design</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+            </div>
             <button type="submit">Send Message</button>
         </form>
-
+        <nav aria-label="Social links">
+            <p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/abiram-o-v-0b9b82394" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/abiram1812" target="_blank">GitHub</a></li>
+                </ul>
+            </p>
+        </nav>
         <p>Email: <a href="mailto:25etcs002013@msruas.ac.in">25etcs002013@msruas.ac.in</a></p>
         <p>Phone: +91 9886724491</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/abiram-o-v-0b9b82394" target="_blank">linkedin.com/in/abiram</a></p>
-        <p>GitHub: <a href="https://github.com/abiram1812" target="_blank">github.com/abiram</a></p>
     </section>
 
     <!--FOOTER-->
-    <footer>
-        <p>&copy; 2026 Abiram. All rights reserved.</p>
+    <footer class="site-footer">
+        <p>&copy; <span class="footer-year"></span> 2026 Abiram. All rights reserved.</p>
     </footer>
 </body>
 </html>

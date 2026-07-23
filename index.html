@@ -32,7 +32,7 @@
 <body>
     <!--NAVIGATION-->
     <nav class="navbar">
-        <div class="logo">Abiram</div>
+        <div id="logo">Abiram</div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -51,9 +51,9 @@
     <section class="hero-section" id="hero">
         <header class="site-header">
              <h1 >Hi, <span class="highlight">I'm Abiram</span></h1>
-            <p>I'm a passionate web developer from Bengaluru.</p>
+            <p>I'm a passionate <strong>web developer</strong> from Bengaluru.</p>
             <div class="hero-buttons">
-                <a href="#contact" class="btn">Hire Me</a>
+                <a href="#contact" class="btn"><em>Hire Me</em></a>
             </div>
         </header>
     </section>
@@ -64,72 +64,58 @@
         <div class="about-content">
             <figure class="profile-figure">
                 <img src="images/profile.jpg" alt="Abiram's Profile Picture" width="200" height="200">
-                <figcaption>I love creating responsive and user-friendly websites.</figcaption>
+                <figcaption><em>I love creating responsive and user-friendly websites.</em></figcaption>
             </figure>
         </div>
         <div class="about-text">
             <p>I am a web developer with a strong background in front-end and back-end technologies. I'm good in:</p>
-            <ol>
+            <ol><em><strong>
                 <li>Web Development</li>
                 <li>UI/UX Design</li>
                 <li>Project Management</li>
-            </ol>
+            </ol></em></strong>
         </div>
     </section>
 
     <!--SKILLS SECTION-->
     <section id="skills" class="skill-section">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-        <table>
-        <thead>
-            <tr>
-                <th>Technology</th>
-                <th>Proficiency</th>
-                <th>Years of Experience</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>HTML</td>
-                <td>Advanced</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>CSS</td>
-                <td>Advanced</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-                <td>Intermediate</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>Python</td>
-                <td>Advanced</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>Node.js</td>
-                <td>Beginner</td>
-                <td>1</td>
-            </tr>
-            <tr>
-                <td>React</td>
-                <td>Intermediate</td>
-                <td>1</td>
-            </tr>
-        </tbody>
-        </table>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-item">
+            <span class="skill-name">HTML</span>
+            <div class="skill-info">
+                <span class="level">Advanced</span>
+                <span class="years">2+ Years Experience</span>
+            </div>
         </div>
+        <div class="skill-item">
+            <span class="skill-name">CSS</span>
+            <div class="skill-info">
+                <span class="level">Advanced</span>
+                <span class="years">2+ Years Experience</span>
+            </div>
+        </div>
+        <div class="skill-item">
+            <span class="skill-name">JS</span>
+            <div class="skill-info">
+                <span class="level">Intermediate</span>
+                <span class="years">1+ Year Experience</span>
+            </div>
+        </div>
+        <div class="skill-item">
+            <span class="skill-name">REACT</span>
+            <div class="skill-info">
+                <span class="level">Intermediate</span>
+                <span class="years">6+ Months Experience</span>
+            </div>
+        </div>
+    </div>
     </section>
-
     <!--PROJECTS SECTION-->
     <section id="projects" class="projects-section">
         <h2>Projects</h2>
         <div class="project-grid">
-            <article class="project-card" data-category="web">
+            <article class="project-card" data-category="web" data-year="2025">
                 <h3>Project 1</h3>
                 <p>A simple web application built with HTML, CSS, and JavaScript.</p>
                 <a href="project1.html" class="btn">View Project</a>
@@ -140,13 +126,13 @@
                 <iframe width="300" height="169" src="https://www.youtube.com/embed/tqjJrXd27m4" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
             </div>
 
-            <article class="project-card" data-category="web">
+            <article class="project-card" data-category="web" data-year="2025">
                 <h3>Project 2</h3>
                 <p>A responsive portfolio website built using React.</p>
                 <a href="project2.html" class="btn">View Project</a>
             </article>
 
-            <article class="project-card" data-category="web">
+            <article class="project-card" data-category="web" data-year="2026">
                 <h3>Project 3</h3>
                 <p>A RESTful API built with Node.js and Express.</p>
                 <a href="project3.html" class="btn">View Project</a>
@@ -199,8 +185,8 @@
     </section>
 
     <!--FOOTER-->
-    <footer class="site-footer">
+    <footer class="site-footer"><strong>
         <p>&copy; <span class="footer-year"></span> 2026 Abiram. All rights reserved.</p>
-    </footer>
+    </footer></strong>
 </body>
 </html>

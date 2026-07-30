@@ -15,7 +15,7 @@
     <meta property="og:title" content="My Portfolio | Abiram">
     <meta property="og:description" content="Full stack developer specialising in React, Node.js, and responsive web design. Check out my portfolio to see my projects and skills.">
     <meta property="og:image" content="images/profile.jpg">
-    <meta property="og:url" content="[Your Portfolio URL]">
+    <meta property="og:url" content="http://127.0.0.1:5500/index.html">
     <meta property="og:type" content="website">
 
     <!--Twitter Card Meta Tags-->
@@ -30,33 +30,41 @@
 </head>
 
 <body>
-    <!--NAVIGATION-->
-    <nav class="navbar">
-        <div id="logo">Abiram O V</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- HEADER + NAVIGATION -->
+    <header class="site-header">
+        <nav class="navbar">
+            <div class="logo">Abiram O V</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- FOR DARK MODE -->
+            <button class="theme-toggle" aria-label="Toggle Dark Mode" title="Toggle Dark Mode">
+                🌙
+            </button>
+            <!-- Mobile Menu -->
+            <button
+                class="menu-toggle"
+                aria-label="Toggle Navigation"
+                aria-expanded="false">
+                ☰
+            </button>
+        </nav>
+    </header>
 
-        <!-- FOR DARK MODE -->
-        <button class="theme-toggle" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">🌛</button>
- 
-        <!-- Mobile Menu -->
-        <button class="menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">☰</button>
-    </nav>
+    <!-- MAIN CONTENT -->
+    <main>
 
     <!--HERO SECTION-->
-    <section class="hero-section" id="hero">
-        <header class="site-header">
-             <h1 >Hi, <span class="highlight">I'm Abiram</span></h1>
+    <section class="hero-section">
+             <h1 >Hi, I'm <span class="highlight">Abiram</span></h1>
             <p>I'm a passionate <strong>web developer</strong> from Bengaluru.</p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary"><em>View My Work</em></a>
                 <a href="#contact" class="btn btn-secondary"><em>Hire Me</em></a>
             </div>
-        </header>
     </section>
 
     <!--ABOUT SECTION-->
@@ -176,6 +184,7 @@
         <p>Email: <a href="mailto:25etcs002013@msruas.ac.in">25etcs002013@msruas.ac.in</a></p>
         <p>Phone: +91 9886724491</p>
     </section>
+    </main>
 
     <!--FOOTER-->
     <footer class="site-footer"><strong>
